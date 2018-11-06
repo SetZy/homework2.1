@@ -1,4 +1,5 @@
-var ar = [2, 1, 5, 0, 3, 4, 7, 2, 3, 1, 0];
+//var ar = [9,0,1,0,9];
+var ar =    [2, 2, 2, 2, 2];
 var arTop = [];
 var sum = 0;
 var minTop = 0;
@@ -17,13 +18,14 @@ for(var i = 0; i < ar.length; i++){
 	{
 		if(h++ > ar.length)
 			break;
-		if(ar[i + h] > ar[i])
+		if(ar[i + h] >= ar[i])
 		{
 			i = i + h - 1;
 			break;
 		}
 	}
- }
+}
+console.log(arTop);
 
 for (var i = 0; i < arTop.length - 1; i++){
 	if(ar[arTop[i]] < ar[arTop[i + 1]]){
