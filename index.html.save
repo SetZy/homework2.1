@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<h1>Введите данные в строку</h1>
+	<input type="text" value id="inputForEnterData">
+	<button onclick="summNumbers()">Проверить</button><br>
+	<span id="result"></span>
+
+	<script src="common.js"></script>
+</body>
+</html>
